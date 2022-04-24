@@ -1,0 +1,113 @@
+body {
+  background-color: rgb(17, 17, 209);
+  /* background-image: url("./assets/images/background.jpeg"); */
+  font-family: monospace;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  color: white;
+  font-size: 5vh;
+}
+
+.scoreBoard {
+  padding: 5px 20px;
+}
+
+.scoreBoard h3 {
+  border-bottom: solid;
+}
+
+.scoreBoard .col {
+  border-style: solid;
+  margin: 5px;
+  background-color: black;
+  color: yellow;
+}
+
+.selectedPointBoard {
+  border-color: red;
+}
+
+.cardSelectionContainer {
+  color: yellow;
+  font-size: 2vw;
+}
+
+.cardsOnHand {
+  padding: 5px 20px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  flex: 1;
+  flex-wrap: wrap; */
+}
+
+.image {
+  /* height: 187px;
+  width: 137px; */
+
+  width: 20vh;
+}
+
+.selectedImage {
+  border: 5px inset yellow;
+}
+
+.gameInfoContainer {
+  color: white;
+  font-size: 3vw;
+}
+.clickDealtoContinue {
+  color: white;
+  font-size: 2.5vw;
+}
+
+.credit {
+  color: white;
+  font-size: 3vw;
+  padding: 10px 10px;
+}
+
+button {
+  width: 15vw;
+  font-size: 2vw;
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  h6 {
+    display: none;
+  }
+
+  .gameInfoContainer {
+    font-size: 5vw;
+  }
+
+  .image {
+    width: 16vh;
+  }
+
+  .clickDealtoContinue {
+    font-size: 4vw;
+  }
+
+  .credit {
+    font-size: 5vw;
+  }
+
+  button {
+    font-size: 5vw;
+  }
+}
+
+@media (min-width: 768px) {
+  header {
+    display: none;
+  }
+}

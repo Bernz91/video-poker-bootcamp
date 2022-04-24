@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <title>Videopoker</title>
+  </head>
+
+  <body>
+    <header>Video Poker 🚀</header>
+    <div class="gameContainer">
+      <div class="scoreBoard">
+        <!-- <h2>Points Board</h2> -->
+        <div class="scoreRow row">
+          <div class="col col-sm-4 col-12">
+            <h3>Coins</h3>
+
+            <h6>Royal Flush</h6>
+            <h6>Straight Flush</h6>
+            <h6>Four of a Kind</h6>
+            <h6>Full House</h6>
+            <h6>Flush</h6>
+            <h6>Straight</h6>
+            <h6>Three of a Kind</h6>
+            <h6>Two Pair</h6>
+            <h6>Jacks or Better</h6>
+          </div>
+          <div id="coin1" class="col selectedPointBoard text-center">
+            <h3>1</h3>
+            <h6>250</h6>
+            <h6>50</h6>
+            <h6>25</h6>
+            <h6>9</h6>
+            <h6>6</h6>
+            <h6>4</h6>
+            <h6>3</h6>
+            <h6>2</h6>
+            <h6>1</h6>
+          </div>
+          <div id="coin2" class="col text-center">
+            <h3>2</h3>
+            <h6>500</h6>
+            <h6>100</h6>
+            <h6>50</h6>
+            <h6>18</h6>
+            <h6>12</h6>
+            <h6>8</h6>
+            <h6>6</h6>
+            <h6>4</h6>
+            <h6>2</h6>
+          </div>
+          <div id="coin3" class="col text-center">
+            <h3>3</h3>
+            <h6>750</h6>
+            <h6>150</h6>
+            <h6>75</h6>
+            <h6>27</h6>
+            <h6>18</h6>
+            <h6>12</h6>
+            <h6>9</h6>
+            <h6>6</h6>
+            <h6>3</h6>
+          </div>
+          <div id="coin4" class="col text-center">
+            <h3>4</h3>
+            <h6>1000</h6>
+            <h6>200</h6>
+            <h6>100</h6>
+            <h6>36</h6>
+            <h6>24</h6>
+            <h6>16</h6>
+            <h6>12</h6>
+            <h6>8</h6>
+            <h6>4</h6>
+          </div>
+          <div id="coin5" class="col text-center">
+            <h3>5</h3>
+            <h6>4000</h6>
+            <h6>250</h6>
+            <h6>125</h6>
+            <h6>45</h6>
+            <h6>30</h6>
+            <h6>20</h6>
+            <h6>15</h6>
+            <h6>10</h6>
+            <h6>5</h6>
+          </div>
+        </div>
+      </div>
+      <div
+        id="gameInfoContainer"
+        class="gameInfoContainer d-flex align-items-center justify-content-center align-self-center pb-2"
+      ></div>
+      <div class="cardSection">
+        <div id="playerHandContainer" class="cardsOnHand row text-center">
+          <div id="card1" class="col"></div>
+          <div id="card2" class="col"></div>
+          <div id="card3" class="col"></div>
+          <div id="card4" class="col"></div>
+          <div id="card5" class="col"></div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="row d-flex align-items-baseline">
+          <div
+            id="clickDealtoContinue"
+            class="clickDealtoContinue col-8 text-end"
+          ></div>
+          <div id="creditContainer" class="credit col text-center">
+            <span class="text-end">Credit: 100</span>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col text-center">
+            <audio id="backgroundMusic" autoplay preload>
+              <source src="./assets/sound/background.mp3" type="audio/mpeg" />
+              Your browser does not support the audio element.
+            </audio>
+            <button id="muteButton" type="button" class="bg-warning">
+              <span id="mute"> Mute</span>
+            </button>
+          </div>
+          <div class="col"></div>
+          <div id="dealButtonContainer" class="col text-center">
+            <button id="dealButton" type="button" class="bg-warning">
+              Deal
+            </button>
+          </div>
+          <div id="drawButtonContainer" class="col text-center">
+            <button id="drawButton" type="button" class="bg-warning">
+              Draw
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Import program logic -->
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
