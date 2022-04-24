@@ -260,9 +260,11 @@ const drawButtonClick = () => {
 const muteButtonClick = () => {
   console.log('mute button clicked');
   const audio = document.getElementById('backgroundMusic');
-  audio.muted = true;
   if (audio.muted === true) {
     audio.muted = false;
+  }
+  else if (audio.muted === false) {
+    audio.muted = true;
   }
 };
 
